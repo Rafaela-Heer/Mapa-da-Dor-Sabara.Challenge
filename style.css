@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Utility */
+
+:root {
+    --cor-azul: #005DA9B0;
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1.5rem 3rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.logo {
+    min-width: 6rem;
+    min-height: 3rem;
+    width: 12rem;
+    height: 5rem;
+    background-image: url('./imagens/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: auto;
+}
+
+.nav-links {
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    display: flex;
+    gap: 2rem;
+    margin: 0 4rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+}
+
+.nav-links a:hover {
+    color: #bfdbfe;
+}
+
+/* Botões da Navbar */
+.botoes-nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 3rem;
+}
+
+.botao-mapa-da-dor {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
+
+.botao-login {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: var(--cor-azul);
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+.botao-login:hover {
+    background: var(--cor-azul);
+}
+
+/* Seção de Diagnóstico */
+.diagnostico {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+    overflow: hidden;
+}
+
+.imagem-header1 {
+    position: absolute;
+    inset: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.imagem-header1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    min-height: 100vh;
+}
+
+.overlay-do-header {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.4));
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container-conteudo-diagnostico {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.diagostico-texto {
+    max-width: 32rem;
+    font-family: var(--fonte-primaria);
+}
+
+.diagnostico-titulo {
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.diagnostico-subtitulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: #e5e7eb;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.botao-sabara {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: var(--cor-azul);
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+.botao-sabara:hover {
+    background: var(--cor-azul);
+}
+
+/* Responsividade */
+
+@media (max-width: 1280px) {
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .navbar-container {
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        margin: 0 1rem;
+    }
+
+    .botoes-nav {
+        display: flex;
+        gap: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    .botao-mapa-da-dor,
+    .botao-login {
+        white-space: nowrap;
+        padding: 0.5rem 1.25rem;
+        border-radius: 9999px;
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
+        white-space: nowrap;
+    }
+    
+}
+
+/* Responsividade para telas ainda menores */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar-container {
+        gap: 0.8rem;
+    }
+
+    .botoes-nav {
+        gap: 0.2rem;
+    }
+
+    .botao-mapa-da-dor,
+    .botao-login {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsividade de tablets */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .botoes-nav {
+        gap: 0.5rem;
+    }
+
+    .botao-mapa-da-dor,
+    .botao-login {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.85rem;
+    }
+
+    .diagnostico-titulo {
+        font-size: 1.8rem;
+    }
+
+    .diagnostico-subtitulo {
+        font-size: 1rem;
+    }
+}
+
+/* Smartphones */
+
+@media (max-width: 480px) {
+    .botoes-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+    }
+
+    .botao-mapa-da-dor,
+    .botao-login {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        width: 120px;
+        height: 40px;
+    }
+}

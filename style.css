@@ -328,6 +328,10 @@ body {
     border-radius: 10px;
   }
 
+  .entretenimento-infantil-imagem {
+    margin-left: 9.375rem;
+}
+
   .como-funciona-container-textos {
     width: 70%;
     display: flex;

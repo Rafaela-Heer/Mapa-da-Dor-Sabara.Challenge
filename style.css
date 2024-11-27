@@ -44,6 +44,7 @@ body {
     align-items: center;
     max-width: 100vw;
     margin: 0 auto;
+    gap: 2rem;
 }
 
 .logo {
@@ -204,14 +205,18 @@ body {
     gap: 2rem;
     position: relative;
     background-color: var(--cor-cards-artigo);
-    border-radius: 8px;
+    border-radius: 26px;
     max-width: 82vw;
-    min-height: 38rem;
+    min-height: 42rem;
     margin-top: -6rem;
     z-index: 1;
     justify-content: center;
   }
   
+  .artigos .card-container .card-1 p {
+    margin-left: 15px;
+  }
+
   .artigos .card-container .card-1,
   .artigos .card-container .card-2 {
     position: relative;
@@ -254,6 +259,7 @@ body {
 
   .artigos .card-container > * {
     position: relative;
+    width: 50%;
   }
 
   .imagem-card .botao-artigo {
@@ -278,12 +284,12 @@ body {
   
   .artigos .conteudo-card-artigo {
     padding: 20px;
-    text-align: center;
   }
   
   .conteudo-card-artigo h3 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
   
   .conteudo-card-artigo p {
@@ -293,9 +299,12 @@ body {
 /* Como Funciona */
 
   .como-funciona {
+    font-family: var(--fonte-primaria);
     padding: 40px;
     background-color: #fff;
     width: 100vw;
+    margin-left: 2%;
+    margin-top: -4%;
   }
 
   .como-funciona h2 {
@@ -320,7 +329,9 @@ body {
     align-items: flex-start;
     gap: 20px;
     width: 55%;
-  }
+    margin-left: 3%;
+    margin-top: 2%
+}
 
   .como-funciona-container-imagens .imagem img {
     width: 100%;
@@ -328,15 +339,20 @@ body {
     border-radius: 10px;
   }
 
+  .consultorio-infantil-imagem img {
+    width: 90%;
+  }
+
   .entretenimento-infantil-imagem {
-    margin-left: 9.375rem;
+    margin-left: 5.375rem;
 }
 
   .como-funciona-container-textos {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    margin-right: 4%;
   }
 
   .primeira-etapa,
@@ -376,12 +392,103 @@ body {
     margin: 0;
   }
 
+/* Como funciona? e Solução! */
+  
+  .problema-e-solucao {
+    margin-left: 4%;
+    width: 92vw;
+    background: url(./IMAGES/problema-solucao.IMAGE.png) center / cover no-repeat;
+    border-radius: 15px;
+    padding: 2.5rem;
+    padding-bottom: 4rem;
+    font-family: var(--fonte-primaria);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 4rem;
+  }
+  
+  .problema-e-solucao h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .problema-e-solucao p {
+    font-size: 1rem;
+  }
+
+  .glass-container {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .esquerda {
+    align-self: flex-start;
+  }
+  
+  .direita {
+    align-self: flex-end;
+  }
+  
+  .teste-voce-mesmo-botao {
+    background-color: #ffffff;
+    color: var(--cor-botao-azul);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
 /* Responsividade */
 
 @media (max-width: 1440px) {
+
     .imagem-card .botao-artigo img {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+    }
+
+    .imagem-card .botao-artigo {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 34%;
+        display: inline-block;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .artigos .card-container {
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        background-color: var(--cor-cards-artigo);
+        border-radius: 8px;
+        max-width: 90vw;
+        min-height: 46rem;
+        margin-top: -6rem;
+        z-index: 1;
+        justify-content: center;
     }
 
     .imagem-card .botao-artigo img {
@@ -390,9 +497,18 @@ body {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
+
+    .texto-container p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.5;
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 1280px) {
+
     .navbar {
         padding: 1rem 1rem;
     }
@@ -431,11 +547,18 @@ body {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
+
+    .como-funciona-container-imagens .imagem img {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+      }
     
 }
 
 /* Responsividade para telas ainda menores */
 @media (max-width: 1024px) {
+
     .navbar {
         padding: 0.8rem 1rem;
     }
@@ -480,18 +603,28 @@ body {
         border-top-right-radius: 8px;
 
     }
+    
+    .artigos .card-container .card-1::before,
+    .artigos .card-container .card-2::before {
+    content: none;    
+    }
+
     .artigos .card-container {
         flex-direction: column;
     }
+
     .imagem-card .botao-artigo {
         width: 33%;
         position: static;
         transform: translateX(0);
         margin-top: 30px;
     }
+
+    
 }
 /* Responsividade de tablets */
 @media (max-width: 768px) {
+
     .navbar {
         padding: 1rem;
     }
@@ -522,6 +655,7 @@ body {
 /* Smartphones */
 
 @media (max-width: 480px) {
+
     .botoes-nav {
         flex-direction: column;
         gap: 0.5rem;

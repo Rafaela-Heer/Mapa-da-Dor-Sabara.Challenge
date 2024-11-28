@@ -454,6 +454,112 @@ body {
     text-decoration: none;
   }
 
+  /* página de login */
+.body-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(./IMAGES/background-login.png);
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  min-height: 100vh;
+  font-family: var(--fonte-primaria);
+}
+
+.conteudo-login{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 2% 5% 15%; 
+  width: 90%;
+  max-width: 44rem; 
+  height: 90vh;
+  min-height: 90vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(57px);
+  border-radius: 40px;
+  overflow-y: auto;
+
+  overflow: hidden; 
+  box-sizing: border-box;
+}
+
+.conteudo-login h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  align-self: center;
+  color: #344D88;
+  margin-bottom: 15%;
+
+}
+
+.conteudo-login img{
+  display: flex;
+  justify-content: center;
+  align-self: center  ;
+  height: 10.25rem;
+  width: 10.25rem;
+  margin-bottom: 15%;
+
+}
+
+.conteudo-login form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.conteudo-login input{
+  width: 100%;
+  height: 4rem;
+  border-radius: 50px;
+  border: solid, 1px, black;
+
+  font-size: 1.5rem;
+  color: #344D88;
+
+  background-color: transparent;
+
+  display: flex;
+  align-self: center;
+  padding: 0 20px;
+  
+}
+
+.conteudo-login input::placeholder{
+  font-family: var(--fonte-primaria);
+  font-size: 1.5rem;
+  color: #344D88;
+}
+
+.btn-entrar{
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 40%;
+  align-self: center;
+
+  color: white;
+  background-color: #344D88;
+
+  font-family: var(--fonte-primaria);
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+
 /* Responsividade */
 
 @media (max-width: 1440px) {
@@ -620,6 +726,16 @@ body {
         margin-top: 30px;
     }
 
+    .conteudo-login h1{
+      font-size: 1.5rem;
+      margin-bottom: 5%;
+  }
+  .conteudo-login img{
+      height: 8rem;
+      width: 8rem;
+      margin-bottom: 5%;
+  }
+
     
 }
 /* Responsividade de tablets */
@@ -650,6 +766,10 @@ body {
     .diagnostico-subtitulo {
         font-size: 1rem;
     }
+
+    .conteudo-login h1{
+      font-size: 1.5rem;
+  }
 }
 
 /* Smartphones */
@@ -674,4 +794,21 @@ body {
         width: 120px;
         height: 40px;
     }
+
+    .conteudo-login h1{
+      font-size: 1.5rem;
+      margin-bottom: 20%;
+  }
+
+  .conteudo-login img{
+      margin-bottom: 20%;
+  }
+
+  .conteudo-login form{
+      gap: 30px;
+  }
+
+  .btn-entrar{
+      width: 70%;
+  }
 }

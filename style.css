@@ -317,10 +317,11 @@ body {
 
   .etapas {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 20px;
-    margin-top: 64px;
+    margin-top: 4rem;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 20px;
   }
 
   .como-funciona-container-imagens {

@@ -578,7 +578,48 @@ body {
   font-family: var(--fonte-primaria);
   cursor: pointer;
 }
+/* footer da página */
 
+footer{
+  background-color: #0000001A;
+  padding: 20px;
+  display: flex;
+  height: 15rem;
+  align-items: center;
+
+  
+
+}
+
+.logos-footer{
+  display: flex;
+  flex-direction: column;
+  padding: 36px 40px;
+  gap: 16px;
+
+}
+
+.logos-footer img{
+  width: 150px;
+  height: 50px;
+}
+
+.seta-footer{
+  display: flex;
+  margin-left: 70%;
+  
+}
+
+.seta-footer img{
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  border: solid, 2px, var(--cor-botao-azul);
+  border-radius: 50%;
+
+  transform: rotate(-90deg);
+
+}
 
   /* página de login */
 .body-login{

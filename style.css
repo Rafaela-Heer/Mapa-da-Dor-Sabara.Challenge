@@ -826,7 +826,28 @@ footer{
         height: auto;
         border-radius: 10px;
       }
-    
+      .entre-contato h1{
+        font-size: 1.5rem;
+      }
+
+      .btn-contato{
+        padding: 0.6rem 5rem;
+      }
+
+      .formulario-contato input{
+        min-width: 15rem;
+        align-self: center;
+      }
+
+      .formulario-contato textarea{
+        min-width: 15rem;
+        align-self: center;
+      }
+
+      .seta-footer{
+        margin-left: 40%;
+        
+      }
 }
 
 /* Responsividade para telas ainda menores */
@@ -902,6 +923,7 @@ footer{
       width: 8rem;
       margin-bottom: 5%;
   }
+
 
     
 }

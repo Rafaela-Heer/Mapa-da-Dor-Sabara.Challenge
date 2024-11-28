@@ -665,7 +665,7 @@ footer{
   font-weight: 600;
   align-self: center;
   color: #344D88;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 
 }
 
@@ -675,7 +675,7 @@ footer{
   align-self: center  ;
   height: 10.25rem;
   width: 10.25rem;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 
 }
 
@@ -925,6 +925,8 @@ footer{
       width: 8rem;
       margin-bottom: 5%;
   }
+
+  
 
 
     

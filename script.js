@@ -1,3 +1,5 @@
+// script pagina de login
+
 document.addEventListener('DOMContentLoaded', () => {
     const cpf = document.querySelector('#cpf');
     const data = document.querySelector('#data');
@@ -60,3 +62,8 @@ cpf.addEventListener('input', () => {
     });
 });
 
+const btnLogin = document.querySelector('.botao-login')
+
+btnLogin.addEventListener('click', () =>{
+    window.location.href = 'login.html'
+})

@@ -302,15 +302,15 @@ body {
     font-family: var(--fonte-primaria);
     padding: 40px;
     background-color: #fff;
-    width: 100vw;
-    margin-left: 2%;
-    margin-top: -4%;
+    max-width: 100%;
+    width: 100%;
+    margin-top: -2%;
   }
 
   .como-funciona h2 {
     text-align: flex-start;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--cor-cards-artigo);
     margin-bottom: -12px;
   }
@@ -326,13 +326,11 @@ body {
   .como-funciona-container-imagens {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
-    width: 55%;
-    margin-left: 3%;
-    margin-top: 2%
-}
-
+    width: 50%;
+    margin-top: 2%;
+  }
   .como-funciona-container-imagens .imagem img {
     width: 100%;
     height: auto;
@@ -340,15 +338,15 @@ body {
   }
 
   .consultorio-infantil-imagem img {
-    width: 90%;
+    width: 100%;
   }
 
   .entretenimento-infantil-imagem {
-    margin-left: 5.375rem;
+    margin-left: 8.375rem;
 }
 
   .como-funciona-container-textos {
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -384,6 +382,9 @@ body {
     font-weight: bold;
     color: var(--cor-cards-artigo);
     margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
   .texto-container p {
     font-size: 1.10rem;
@@ -423,7 +424,6 @@ body {
   .glass-container {
     width: 70%;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 20px;
     color: white;

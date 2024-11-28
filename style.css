@@ -454,6 +454,132 @@ body {
     text-decoration: none;
   }
 
+  /* seção de contato */
+.contato{
+  background: linear-gradient(
+      #0000008D, 
+      #0000008D
+    ), 
+    url(./IMAGES/mapa-sabara.png);
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: var(--fonte-primaria);
+}
+
+.info-contato{
+  display: flex;
+  flex-direction: column;
+  padding: 200px 60px;
+  gap: 20px;
+}
+
+.info-contato h2{
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.info-contato p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  
+}
+
+.entre-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 38.4rem;
+  width: 35rem;
+  margin-right: 2%;
+
+}
+.titulo-entre-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #344D88;
+}
+
+
+.entre-contato h1{
+  
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 7%;
+}
+
+.entre-contato h2{
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+.formulario-contato{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formulario-contato input{
+  
+  width: 80%;
+  min-width: 25.25rem;
+  height: 2.8rem;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid, 1px, #344D88;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  color: #344D88;
+}
+
+.formulario-contato textarea{
+  
+  width: 80%;
+  min-width: 25.25rem;
+  height: 100%;
+  min-height: 9.38rem;
+  border-radius: 15px;
+  border: solid, 1px, #344D88;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  color: #344D88;
+}
+
+
+.formulario-contato input::placeholder, textarea::placeholder{
+  font-family: var(--fonte-primaria);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #344D88;
+
+}
+
+.btn-contato{
+  margin-top: 8%;
+  padding: 0.6rem 11rem;
+  border-radius: 16px;
+  border: none;
+  background-color: #344D88;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  cursor: pointer;
+}
+
+
   /* página de login */
 .body-login{
   display: flex;

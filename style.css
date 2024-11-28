@@ -456,6 +456,279 @@ body {
     text-decoration: none;
   }
 
+  /* seção de contato */
+.contato{
+  background: linear-gradient(
+      #0000008D, 
+      #0000008D
+    ), 
+    url(./IMAGES/mapa-sabara.png);
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: var(--fonte-primaria);
+}
+
+.info-contato{
+  display: flex;
+  flex-direction: column;
+  padding: 200px 60px;
+  gap: 20px;
+}
+
+.info-contato h2{
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.info-contato p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  
+}
+
+.entre-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 38.4rem;
+  width: 35rem;
+  margin-right: 2%;
+
+}
+.titulo-entre-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #344D88;
+}
+
+
+.entre-contato h1{
+  
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 7%;
+}
+
+.entre-contato h2{
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+.formulario-contato{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formulario-contato input{
+  
+  width: 80%;
+  min-width: 25.25rem;
+  height: 2.8rem;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid, 1px, #344D88;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  color: #344D88;
+}
+
+.formulario-contato textarea{
+  
+  width: 80%;
+  min-width: 25.25rem;
+  height: 100%;
+  min-height: 9.38rem;
+  border-radius: 15px;
+  border: solid, 1px, #344D88;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  color: #344D88;
+}
+
+
+.formulario-contato input::placeholder, textarea::placeholder{
+  font-family: var(--fonte-primaria);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #344D88;
+
+}
+
+.btn-contato{
+  margin-top: 8%;
+  padding: 0.6rem 11rem;
+  border-radius: 16px;
+  border: none;
+  background-color: #344D88;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+  cursor: pointer;
+}
+/* footer da página */
+
+footer{
+  background-color: #0000001A;
+  padding: 20px;
+  display: flex;
+  height: 15rem;
+  align-items: center;
+
+  
+
+}
+
+.logos-footer{
+  display: flex;
+  flex-direction: column;
+  padding: 36px 40px;
+  gap: 16px;
+
+}
+
+.logos-footer img{
+  width: 150px;
+  height: 50px;
+}
+
+.seta-footer{
+  display: flex;
+  margin-left: 70%;
+  
+}
+
+.seta-footer img{
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  border: solid, 2px, var(--cor-botao-azul);
+  border-radius: 50%;
+
+  transform: rotate(-90deg);
+
+}
+
+  /* página de login */
+.body-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(./IMAGES/background-login.png);
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  min-height: 100vh;
+  font-family: var(--fonte-primaria);
+}
+
+.conteudo-login{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 2% 5% 15%; 
+  width: 90%;
+  max-width: 44rem; 
+  height: 90vh;
+  min-height: 90vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(57px);
+  border-radius: 40px;
+  overflow-y: auto;
+
+  overflow: hidden; 
+  box-sizing: border-box;
+}
+
+.conteudo-login h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  align-self: center;
+  color: #344D88;
+  margin-bottom: 15%;
+
+}
+
+.conteudo-login img{
+  display: flex;
+  justify-content: center;
+  align-self: center  ;
+  height: 10.25rem;
+  width: 10.25rem;
+  margin-bottom: 15%;
+
+}
+
+.conteudo-login form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.conteudo-login input{
+  width: 100%;
+  height: 4rem;
+  border-radius: 50px;
+  border: solid, 1px, black;
+
+  font-size: 1.5rem;
+  color: #344D88;
+
+  background-color: transparent;
+
+  display: flex;
+  align-self: center;
+  padding: 0 20px;
+  
+}
+
+.conteudo-login input::placeholder{
+  font-family: var(--fonte-primaria);
+  font-size: 1.5rem;
+  color: #344D88;
+}
+
+.btn-entrar{
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 40%;
+  align-self: center;
+
+  color: white;
+  background-color: #344D88;
+
+  font-family: var(--fonte-primaria);
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+
 /* Responsividade */
 
 @media (max-width: 1440px) {
@@ -555,7 +828,28 @@ body {
         height: auto;
         border-radius: 10px;
       }
-    
+      .entre-contato h1{
+        font-size: 1.5rem;
+      }
+
+      .btn-contato{
+        padding: 0.6rem 5rem;
+      }
+
+      .formulario-contato input{
+        min-width: 15rem;
+        align-self: center;
+      }
+
+      .formulario-contato textarea{
+        min-width: 15rem;
+        align-self: center;
+      }
+
+      .seta-footer{
+        margin-left: 40%;
+        
+      }
 }
 
 /* Responsividade para telas ainda menores */
@@ -622,6 +916,17 @@ body {
         margin-top: 30px;
     }
 
+    .conteudo-login h1{
+      font-size: 1.5rem;
+      margin-bottom: 5%;
+  }
+  .conteudo-login img{
+      height: 8rem;
+      width: 8rem;
+      margin-bottom: 5%;
+  }
+
+
     
 }
 /* Responsividade de tablets */
@@ -652,6 +957,10 @@ body {
     .diagnostico-subtitulo {
         font-size: 1rem;
     }
+
+    .conteudo-login h1{
+      font-size: 1.5rem;
+  }
 }
 
 /* Smartphones */
@@ -676,4 +985,21 @@ body {
         width: 120px;
         height: 40px;
     }
+
+    .conteudo-login h1{
+      font-size: 1.5rem;
+      margin-bottom: 20%;
+  }
+
+  .conteudo-login img{
+      margin-bottom: 20%;
+  }
+
+  .conteudo-login form{
+      gap: 30px;
+  }
+
+  .btn-entrar{
+      width: 70%;
+  }
 }

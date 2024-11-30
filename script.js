@@ -9,18 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
 entrar.addEventListener('click', () =>{
     const cpfValor = cpf.value.trim();
     const dataValor = data.value.trim();
-
-
+    
+    
     if (!cpfValor || !dataValor) {
         alert('Por favor, preencha todos os campos.');
         return;
     }
-
-    if (cpfValor.length !== 10 || dataValor.length !== 8){
+    
+    if (cpfValor.length !== 14 || dataValor.length !== 10){
         alert('CPF ou Data de Nascimento Inválida')
         return  
     }
-
+    
     alert('Logado com sucesso')
     window.location.href = 'index.html'
 })

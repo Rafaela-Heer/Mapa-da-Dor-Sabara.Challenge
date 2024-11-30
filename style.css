@@ -20,6 +20,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #F6F6F6;
 }
 
 .container {
@@ -301,7 +302,6 @@ body {
   .como-funciona {
     font-family: var(--fonte-primaria);
     padding: 40px;
-    background-color: #fff;
     width: 100vw;
     margin-left: 2%;
     margin-top: -4%;
@@ -453,6 +453,40 @@ body {
     transform: translateX(-50%);
     text-decoration: none;
   }
+
+/* seção dashboard */
+
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  padding: 7% 2%;
+}
+
+.artigo-dashboard{
+  width: 40%;
+
+  background-color: white;
+  border-radius: 20px;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.artigo-dashboard img{
+  height: 64px;
+  width: 64px;
+}
+
+.artigo-dashboard p{
+  font-family: var(--fonte-primaria);
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #344D88;
+
+}
 
   /* seção de contato */
 .contato{

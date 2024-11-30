@@ -3,9 +3,8 @@
 /* Utility */
 
 :root {
-    --cor-botao-azul: #344D88;
+    --cor-azul: #344D88;
     --fonte-primaria: "Montserrat", sans-serif;
-    --cor-cards-artigo: #344D88;
     --cor-letra-branca: #FFFFFF;
 }
 
@@ -86,32 +85,20 @@ body {
     margin-left: 3rem;
 }
 
-.botao-mapa-da-dor {
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: var(--cor-letra-branca);
-    background: transparent;
-    border: 1px solid white;
-    transition: all 0.3s;
-}
-
 .botao-login {
     padding: 0.5rem 1.5rem;
     border-radius: 9999px;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
-    background: var(--cor-botao-azul);
+    background: var(--cor-azul);
     color: var(--cor-letra-branca);
     border: none;
     transition: all 0.3s;
 }
 
 .botao-login:hover {
-    background: var(--cor-botao-azul);
+    background: var(--cor-azul);
 }
 
 /* Seção de Diagnóstico */
@@ -181,18 +168,17 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
-    background: var(--cor-botao-azul);
+    background: var(--cor-azul);
     color: var(--cor-letra-branca);
     border: none;
     transition: all 0.3s;
 }
 
 .botao-sabara:hover {
-    background: var(--cor-botao-azul);
+    background: var(--cor-azul);
 }
 
 /* Artigos */
-
 .artigos {
     display: flex;
     justify-content: center;
@@ -205,7 +191,7 @@ body {
     display: flex;
     gap: 2rem;
     position: relative;
-    background-color: var(--cor-cards-artigo);
+    background-color: var(--cor-azul);
     border-radius: 26px;
     max-width: 82vw;
     min-height: 42rem;
@@ -298,7 +284,6 @@ body {
   }
 
 /* Como Funciona */
-
   .como-funciona {
     font-family: var(--fonte-primaria);
     padding: 20px;
@@ -312,7 +297,7 @@ body {
     text-align: flex-start;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--cor-cards-artigo);
+    color: var(--cor-azul);
     margin-bottom: -12px;
   }
 
@@ -383,8 +368,9 @@ body {
   .texto-container h3 {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--cor-cards-artigo);
+    color: var(--cor-azul);
     margin: 0;
+    margin-bottom: 10px;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -397,7 +383,6 @@ body {
   }
 
 /* Como funciona? e Solução! */
-  
   .problema-e-solucao {
     margin-left: 4%;
     width: 92vw;
@@ -411,7 +396,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin-bottom: 4rem;
   }
   
   .problema-e-solucao h2 {
@@ -428,7 +412,7 @@ body {
     width: 70%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    padding: 20px;
+    padding: 2.5rem;
     color: white;
   }
   
@@ -439,60 +423,64 @@ body {
   .direita {
     align-self: flex-end;
   }
-  
-  .teste-voce-mesmo-botao {
-    background-color: #ffffff;
-    color: var(--cor-botao-azul);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: -4%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-decoration: none;
-  }
 
-/* seção dashboard */
+/* Seção Dashboard */
+.dashboard {
+  padding: 2% 2%;
+}
 
-.dashboard{
+.dashboard-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--cor-azul);
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+}
+
+.dashboard-titulo p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--cor-azul);
+  margin-bottom: 10px;
+}
+
+.dashboard-container {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
   justify-content: center;
-  padding: 7% 2%;
 }
 
-.artigo-dashboard{
+.artigo-dashboard {
   width: 40%;
-
   background-color: white;
   border-radius: 20px;
-  padding: 60px 60px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
-.artigo-dashboard img{
+.artigo-dashboard img {
   height: 64px;
   width: 64px;
 }
 
-.artigo-dashboard p{
+.artigo-dashboard p {
   font-family: var(--fonte-primaria);
   font-size: 1.7rem;
   font-weight: 400;
   color: #344D88;
-
+  line-height: 1.5;
 }
 
-  /* seção de contato */
-.contato{
+/* Seção de Contatos */
+.contato {
   background: linear-gradient(
       #0000008D, 
       #0000008D
@@ -503,31 +491,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
   font-family: var(--fonte-primaria);
+  margin-bottom: 3rem;
 }
 
-.info-contato{
+.info-contato {
   display: flex;
   flex-direction: column;
   padding: 200px 60px;
   gap: 20px;
 }
 
-.info-contato h2{
+.info-contato h2 {
   color: white;
   font-size: 2.25rem;
   font-weight: 600;
 }
 
-.info-contato p{
+.info-contato p {
   font-size: 1.25rem;
   font-weight: 400;
   color: white;
-  
 }
 
-.entre-contato{
+.entre-contato {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -536,37 +524,36 @@ body {
   height: 38.4rem;
   width: 35rem;
   margin-right: 2%;
-
 }
-.titulo-entre-contato{
+
+.titulo-entre-contato {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  color: #344D88;
+  color: var(--cor-azul);
 }
 
 
-.entre-contato h1{
-  
+.entre-contato h1 {
   font-size: 2rem;
   font-weight: 600;
   margin-top: 7%;
 }
 
-.entre-contato h2{
+.entre-contato h2 {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 10%;
 }
 
-.formulario-contato{
+.formulario-contato {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.formulario-contato input{
-  
+
+.formulario-contato input {
   width: 80%;
   min-width: 25.25rem;
   height: 2.8rem;
@@ -579,7 +566,7 @@ body {
   color: #344D88;
 }
 
-.formulario-contato textarea{
+.formulario-contato textarea {
   
   width: 80%;
   min-width: 25.25rem;
@@ -595,15 +582,14 @@ body {
 }
 
 
-.formulario-contato input::placeholder, textarea::placeholder{
+.formulario-contato input::placeholder, textarea::placeholder {
   font-family: var(--fonte-primaria);
   font-size: 1rem;
   font-weight: 700;
   color: #344D88;
-
 }
 
-.btn-contato{
+.botao-contato {
   margin-top: 8%;
   padding: 0.6rem 11rem;
   border-radius: 16px;
@@ -615,7 +601,8 @@ body {
   font-family: var(--fonte-primaria);
   cursor: pointer;
 }
-/* footer da página */
+
+/* Footer da página */
 
 footer{
   background-color: #0000001A;
@@ -623,43 +610,37 @@ footer{
   display: flex;
   height: 15rem;
   align-items: center;
-
-  
-
 }
 
-.logos-footer{
+.logos-footer {
   display: flex;
   flex-direction: column;
   padding: 36px 40px;
   gap: 16px;
-
 }
 
-.logos-footer img{
+.logos-footer img {
   width: 150px;
   height: 50px;
 }
 
-.seta-footer{
+.seta-footer {
   display: flex;
   margin-left: 70%;
-  
 }
 
-.seta-footer img{
+.seta-footer img {
   width: 80px;
   height: 80px;
   padding: 20px;
   border: solid, 2px, var(--cor-botao-azul);
   border-radius: 50%;
-
   transform: rotate(-90deg);
-
 }
 
-  /* página de login */
-.body-login{
+/* Página de login */
+
+.body-login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -675,7 +656,7 @@ footer{
   font-family: var(--fonte-primaria);
 }
 
-.conteudo-login{
+.conteudo-login {
 
   display: flex;
   flex-direction: column;
@@ -695,33 +676,31 @@ footer{
   box-sizing: border-box;
 }
 
-.conteudo-login h1{
+.conteudo-login h1 {
   font-size: 2.5rem;
   font-weight: 600;
   align-self: center;
   color: #344D88;
   margin-bottom: 10%;
-
 }
 
-.conteudo-login img{
+.conteudo-login img {
   display: flex;
   justify-content: center;
   align-self: center  ;
   height: 10.25rem;
   width: 10.25rem;
   margin-bottom: 10%;
-
 }
 
-.conteudo-login form{
+.conteudo-login form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
 }
 
-.conteudo-login input{
+.conteudo-login input {
   width: 100%;
   height: 4rem;
   border-radius: 50px;
@@ -738,13 +717,13 @@ footer{
   
 }
 
-.conteudo-login input::placeholder{
+.conteudo-login input::placeholder {
   font-family: var(--fonte-primaria);
   font-size: 1.5rem;
   color: #344D88;
 }
 
-.btn-entrar{
+.botao-entrar {
   margin-top: 40px;
   padding: 20px 0;
   width: 40%;
@@ -792,7 +771,7 @@ footer{
         display: flex;
         gap: 2rem;
         position: relative;
-        background-color: var(--cor-cards-artigo);
+        background-color: var(--cor-azul);
         border-radius: 8px;
         max-width: 90vw;
         min-height: 46rem;
@@ -867,7 +846,7 @@ footer{
         font-size: 1.5rem;
       }
 
-      .btn-contato{
+      .botao-contato{
         padding: 0.6rem 5rem;
       }
 
@@ -1036,7 +1015,7 @@ footer{
       gap: 30px;
   }
 
-  .btn-entrar{
+  .botao-entrar{
       width: 70%;
   }
 }

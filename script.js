@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cpf = document.querySelector('#cpf');
     const data = document.querySelector('#data');
-    const entrar = document.querySelector('.btn-entrar')
+    const entrar = document.querySelector('.botao-entrar')
 
 
 entrar.addEventListener('click', () =>{
@@ -62,8 +62,8 @@ cpf.addEventListener('input', () => {
     });
 });
 
-const btnLogin = document.querySelector('.botao-login')
+const botao_logar = document.querySelector('.botao-login')
 
-btnLogin.addEventListener('click', () =>{
+botao_logar.addEventListener('click', () =>{
     window.location.href = 'login.html'
 })

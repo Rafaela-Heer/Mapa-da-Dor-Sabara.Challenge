@@ -22,11 +22,11 @@ O Mapa da Dor é uma solução tecnológica interativa desenvolvida para melhora
   - **Figma:** Utilizado para o design e prototipação das páginas, fornecendo a base para o design e o layout padronizados em todo o site.
 
 ## Estrutura das páginas
-- **Hero-Section** - sendo a "cara do site", contém o menu com todas as seções da página, facilitando o acesso;
+- **Hero-Section** - A "cara do site", contém o menu com todas as seções da página, facilitando o acesso;
 - **Sistema de Login** - Futuramente permitirá o acesso ao mapa da dor ligando o sistema ao paciente específico;
-- **Como Funciona** - Explicação em três etapas sobre o funcionamento do projeto.
-- **Qual o problema? Solução!** - Apresenta os impactos negativos do problema em comparação com os impactos positivos que a solução trará.
-- **Dashboard** - Quais as funções base do painel de controle para os profissionais de saúde.
+- **Como Funciona** - Explicação em três etapas sobre o funcionamento do projeto;
+- **Qual o problema? Solução!** - Apresenta os impactos negativos do problema em comparação com os impactos positivos que a solução trará;
+- **Dashboard** - Quais as funções base do painel de controle para os profissionais de saúde;
 - **Contato** - Formulário para os usuários entrarem em contato.
 
 ## Figma

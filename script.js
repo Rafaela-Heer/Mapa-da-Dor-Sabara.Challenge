@@ -31,7 +31,13 @@ enviar.addEventListener('click', ()=>{
         alert('Por favor preencha todos os campos!')
         return
     }
-    alert('Mensagem enviada com sucesso!')
+    alert(
+        `Mensagem enviada com sucesso!\n\n` +
+        `Nome: ${nome}\n` +
+        `Telefone: ${telefone}\n` +
+        `Email: ${email}\n\n`+
+        `Mensagem: ${mensagem}`
+    );
     formulario.reset()
 })
 

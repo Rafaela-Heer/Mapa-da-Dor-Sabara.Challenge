@@ -1,69 +1,72 @@
-// script pagina de login
+// redirecionamento para página de login
 
-document.addEventListener('DOMContentLoaded', () => {
-    const cpf = document.querySelector('#cpf');
-    const data = document.querySelector('#data');
-    const entrar = document.querySelector('.botao-entrar')
+const botaoLogar = document.querySelector('.botao-login');
 
+botaoLogar.addEventListener('click', () => {
+    window.location.href = 'login.html';
+});
 
-entrar.addEventListener('click', () =>{
-    const cpfValor = cpf.value.trim();
-    const dataValor = data.value.trim();
-    
-    
-    if (!cpfValor || !dataValor) {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
-    
-    if (cpfValor.length !== 14 || dataValor.length !== 10){
-        alert('CPF ou Data de Nascimento Inválida')
-        return  
-    }
-    
-    alert('Logado com sucesso')
-    window.location.href = 'index.html'
+// ir para o topo da página atráves do footer
+
+const seta = document.querySelector('#seta')
+
+seta.addEventListener('click', () =>{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
 })
 
- // formatação de cpf
-cpf.addEventListener('input', () => {
-        // remove caracteres que não são numéricos
-        let valor = cpf.value.replace(/\D/g, '');
-        
-        // limitando o número de caracteres a somente 11
-        valor = valor.slice(0, 11);
-        
-        // aplicando a formatação de cpf
-        if (valor.length > 0) {
-            valor = valor.replace(/^(\d{3})(\d)/, '$1.$2');
-            valor = valor.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
-            valor = valor.replace(/\.(\d{3})(\d)/, '.$1-$2');
-            valor = valor.replace(/\-(\d{2})(\d)/, '-$1$2');
-        }
-        
-        cpf.value = valor;
-    });
+// validações no formulário de contato
 
-// formatação de data de nascimento
-    data.addEventListener('input',() => {
-        // remove caracteres que não são numéricos
-        let valor = data.value.replace(/\D/g, '');
-        
-        // limitando o número de caracteres a somente 8
-        valor = valor.slice(0, 8);
-        
-        // aplicando a formatação de data
-        if (valor.length > 0) {
-            valor = valor.replace(/^(\d{2})(\d)/, '$1/$2');
-            valor = valor.replace(/(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');
+const enviar = document.querySelector('.botao-contato')
+const formulario = document.querySelector('.formulario-contato')
+
+enviar.addEventListener('click', ()=>{
+    const nome = document.querySelector('#nome').value.trim()
+    const telefone = document.querySelector('#telefone').value.trim()
+    const mensagem = document.querySelector('#mensagem').value.trim()
+    const email = document.querySelector('#email').value.trim()
+    if(!nome || !email || !telefone || !mensagem){
+        alert('Por favor preencha todos os campos!')
+        return
+    }
+    alert('Mensagem enviada com sucesso!')
+    formulario.reset()
+})
+
+// permitir somente números no input de telefone
+const inputTel = document.querySelector('#telefone')
+
+inputTel.addEventListener('input', ()=>{
+    let valorInput = inputTel.value.replace(/\D/g, '')
+    inputTel.value = valorInput
+})
+
+// flip card na seção de dashboard
+
+// lista de imagens para os artigos do dashboard
+const cardImg = [
+    './IMAGES/dash-img-1.png', './IMAGES/dash-img-2.png', './IMAGES/dash-img-3.png', './IMAGES/dash-img-4.png'
+]
+// efeito de flip dos artigos do dashboard
+const cardsDashboard = document.querySelectorAll('.artigo-dashboard')
+
+cardsDashboard.forEach((card, index) => {
+    const conteudoOriginal = card.innerHTML;
+    card.dataset.conteudoOriginal = conteudoOriginal;
+
+    card.addEventListener('click', () => {
+        if (card.dataset.state === 'frente') {
+            card.innerHTML = `<img src="${cardImg[index]}" class="card-img">`;
+            card.dataset.state = 'tras';
+            card.classList.add('virado');
+        } else {
+            card.innerHTML = card.dataset.conteudoOriginal;
+            card.dataset.state = 'frente';
+            card.classList.remove('virado');
         }
-        
-        data.value = valor;
     });
 });
 
-const botao_logar = document.querySelector('.botao-login')
 
-botao_logar.addEventListener('click', () =>{
-    window.location.href = 'login.html'
-})
